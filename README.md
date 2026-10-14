@@ -103,7 +103,3 @@ Email delivery and database persistence must be tested with valid production pro
 Deploy the frontend and Express API together as a Node.js web service so they share the same origin. You will also need a persistent PostgreSQL database and an SMTP provider. Configure all secrets as environment variables in your hosting provider—not in source code or frontend variables.
 
 Use the hosting provider's documented build and start commands and run the database migration against the production database before using the site. Test the contact form and email delivery after deployment. A static-only host such as GitHub Pages cannot run the Express API or database-backed admin inbox.
-
-## Credits
-
-This portfolio began from the open-source [DeveloperFolio](https://github.com/saadpasta/developerFolio) template. Credit for the original template belongs to its maintainers and contributors; the portfolio content and project configuration have been customized for Hanif Muhammad.
