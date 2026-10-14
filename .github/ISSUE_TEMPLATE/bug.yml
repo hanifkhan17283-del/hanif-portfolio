@@ -5,13 +5,17 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Please fill out each section below. This info allows maintainers to diagnose (and fix!) your issue as quickly as possible. Before opening a new issue, please search existing issues [here](https://github.com/saadpasta/developerFolio/issues).
+      value: >-
+        Please fill out each section below. This info allows maintainers to diagnose
+        (and fix!) your issue as quickly as possible. Before opening a new issue,
+        please search existing issues
+        [here](https://github.com/hanifkhan17283-del/hanif-portfolio/issues).
 
   - type: textarea
     id: description
     attributes:
       label: Describe the bug
-      description: A clear and concise description of what the bug is
+      description: A clear and concise description of what the bug is.
     validations:
       required: true
 
@@ -19,7 +23,7 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce
-      description: Steps to reproduce the behavior
+      description: Steps to reproduce the behavior.
       value: |
         1. Go to '...'
         2. Click on '....'
@@ -37,9 +41,10 @@ body:
       required: true
 
   - type: input
+    id: responsiveness
     attributes:
-      label: Is this responsiveness Issue
-      description: Write YES/NO in the box below
+      label: Is this a responsiveness issue?
+      description: Write YES/NO in the box below.
     validations:
       required: true
 
@@ -47,34 +52,37 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: Please add screenshots if applicable
+      description: Please add screenshots if applicable.
     validations:
       required: false
 
   - type: textarea
+    id: desktop
     attributes:
       label: Desktop
-      description: Please complete the following information
+      description: Please complete the following information.
       value: |
-        - OS: [e.g. iOS]
-        - Browser: [e.g. chrome, safari]
+        - OS: [e.g. Windows 11]
+        - Browser: [e.g. Chrome, Safari]
         - Version: [e.g. 22]
     validations:
       required: false
 
   - type: textarea
+    id: smartphones
     attributes:
       label: Smartphones
-      description: Please complete the following information
+      description: Please complete the following information.
       value: |
-        - Device: [e.g. iPhone6]
-        - OS: [e.g. iOS8.1]
-        - Browser [e.g. stock browser, safari]
-        - Version [e.g. 22]
+        - Device: [e.g. iPhone]
+        - OS: [e.g. iOS]
+        - Browser: [e.g. Safari, Chrome]
+        - Version: [e.g. 22]
     validations:
       required: false
 
   - type: textarea
+    id: additional-context
     attributes:
       label: Additional context
       description: Add any other context about the problem here.
