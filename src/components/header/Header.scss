@@ -1,0 +1,204 @@
+@import "../../_globalColor";
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid rgba(96, 165, 250, 0.18);
+  background: rgba(7, 16, 31, 0.96);
+  color: #f8fbff;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  display: flex;
+  width: min(100% - 40px, 1320px);
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.header-brand {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f8fbff;
+  text-decoration: none;
+}
+
+.header-monogram {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(103, 232, 249, 0.48);
+  border-radius: 0.8rem;
+  background: linear-gradient(145deg, rgba(56, 189, 248, 0.2), rgba(99, 102, 241, 0.18));
+  color: #a5f3fc;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.header-brand-name {
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(0.15rem, 0.65vw, 0.65rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-navigation a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  padding: 0.55rem 0.6rem;
+  border-radius: 0.55rem;
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.header-navigation a:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: #a5f3fc;
+}
+
+.header-navigation a:focus-visible,
+.header-brand:focus-visible,
+.header-menu-toggle:focus-visible {
+  outline: 3px solid #67e8f9;
+  outline-offset: 3px;
+}
+
+.header-theme-control {
+  display: flex;
+  align-items: center;
+  padding-left: 0.35rem;
+}
+
+.header-menu-toggle {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 0.7rem;
+  background: rgba(15, 23, 42, 0.8);
+  color: #e0f2fe;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.site-header .switch {
+  margin: 0;
+}
+
+@media (max-width: 1120px) {
+  .header-inner {
+    width: min(100% - 32px, 1320px);
+  }
+
+  .header-brand-name {
+    font-size: 0.92rem;
+  }
+
+  .header-navigation ul {
+    gap: 0;
+  }
+
+  .header-navigation a {
+    padding-right: 0.42rem;
+    padding-left: 0.42rem;
+    font-size: 0.76rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .header-inner {
+    position: relative;
+    min-height: 68px;
+  }
+
+  .header-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-navigation {
+    position: absolute;
+    top: calc(100% - 1px);
+    right: -16px;
+    left: -16px;
+    display: none;
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+    background: #07101f;
+    box-shadow: 0 18px 32px rgba(2, 8, 23, 0.35);
+  }
+
+  .header-navigation-open {
+    display: block;
+  }
+
+  .header-navigation ul {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.8rem 16px 1rem;
+  }
+
+  .header-navigation li {
+    width: 100%;
+  }
+
+  .header-navigation a {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .header-theme-control {
+    padding: 0.55rem 0.85rem 0.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-inner {
+    width: calc(100% - 28px);
+  }
+
+  .header-navigation {
+    right: -14px;
+    left: -14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-navigation a {
+    transition: none;
+  }
+}

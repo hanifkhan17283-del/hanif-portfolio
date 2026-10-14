@@ -1,0 +1,62 @@
+:root {
+  /* Edit these custom properties to adjust the portfolio's global color scheme. */
+  --button-color: #38bdf8;
+  --button-hover: #7dd3fc;
+  --top-button-hover: #0f172a;
+  --title-color: #e2e8f0;
+  --text-color: #dfeafc;
+  --sub-title: #9fb3d9;
+  --background-color: #ebedf3;
+  --card-subtitle: #c2d4f0;
+  --talk-card-sub-title: #a3b1c9;
+  --blog-card-title-color: #f8fbff;
+  --text-color-dark: #f8fbff;
+  --toggle-check: #38bdf8;
+  --toggle-switch-slider-bg: #cbd5e1;
+  --github-repo-card-language-color-bg: #38bdf8;
+  --github-repo-card-color: rgb(148, 163, 184);
+  --github-repo-card-repo-card-stats-color: rgb(148, 163, 184);
+  --github-repo-card-repo-name-color: rgb(226, 232, 240);
+  --github-profile-card-location-ts: #dbeafe;
+  --github-profile-card-border: #60a5fa;
+  --light-background1: #0f172a;
+  --light-background2: #111827;
+  --light-background3: #172033;
+  --blog-card-container-color: #0f172a;
+  --dark-background: #f5f8ff;
+  --light-box-shadow-dark: rgba(14, 165, 233, 0.2);
+  --light-box-shadow: rgba(15, 23, 42, 0.25);
+  --light-box-shadow-darker: rgba(14, 116, 144, 0.35);
+  --dark-box-shadow: rgba(96, 165, 250, 0.38);
+  --dark-box-shadow2: rgba(148, 163, 184, 0.6);
+  --experience-card-blurred-div-lg: linear-gradient(
+    rgba(15, 23, 42, 0.7),
+    rgba(15, 23, 42, 0.3)
+  );
+  --experience-card-banner-lg: linear-gradient(
+    rgba(15, 23, 42, 0.8),
+    rgba(15, 23, 42, 0.5)
+  );
+  --progress-bar-background: rgba(148, 163, 184, 0.2);
+  --light-border1: rgba(96, 165, 250, 0.25);
+  --education-card-border: rgba(96, 165, 250, 0.5);
+  --achievement-certificate-card-hover-dark: rgba(56, 189, 248, 0.15);
+  --blog-card-hover-small-color: rgba(148, 163, 184, 0.15);
+  --header-hover-bg: rgba(59, 130, 246, 0.12);
+  --contact-detail-hover-ts: #cbd5e1;
+  --progress-bar-span-bg: #38bdf8;
+  --icon-background: #0f172a;
+  --app-header-bg: #0b1120;
+  --skills-color: #60a5fa;
+  --app-link: #67e8f9;
+  --face-book: #3b5998;
+  --linkedin: #0a66c2;
+  --github: #f8fafc;
+  --gitlab: #fc6d26;
+  --google: #ea4335;
+  --twitter: #1da1f2;
+  --medium: #0f172a;
+  --stackoverflow: #f48024;
+  --instagram: #c13584;
+  --kaggle: #20beff;
+}

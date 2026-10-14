@@ -1,0 +1,64 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  flex: 0 0 auto;
+}
+
+.switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--toggle-switch-slider-bg);
+  border-radius: 34px;
+  transition: 0.4s ease;
+}
+
+.slider::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 28px;
+  height: 26px;
+  content: "";
+  background-color: var(--text-color-dark);
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--toggle-check);
+}
+
+.switch input:focus-visible + .slider {
+  outline: 3px solid #67e8f9;
+  outline-offset: 3px;
+}
+
+.switch input:checked + .slider::before,
+.switch input:checked + .slider > .emoji {
+  transform: translateX(24px);
+}
+
+.emoji {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+  transition: transform 0.4s ease;
+}

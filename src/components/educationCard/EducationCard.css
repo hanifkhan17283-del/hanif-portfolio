@@ -1,0 +1,127 @@
+.education-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 0;
+  gap: 1.5rem;
+}
+
+.education-card:hover + .education-card-border {
+  border-color: var(--education-card-border);
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-card-border {
+  height: 30px;
+  width: 80%;
+  border-top: 2px solid var(--light-border1);
+  margin-bottom: 20px;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-text-school {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.education-roundedimg {
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+  flex: 0 0 auto;
+  box-shadow: 0 0.5rem 1rem var(--light-box-shadow-darker);
+  border-radius: 50%;
+}
+
+.education-card-right {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.education-text-subHeader {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0px;
+  padding-top: 0.8rem;
+  line-height: normal;
+}
+
+.education-text-duration {
+  color: var(--title-color);
+  font-size: 19px;
+  margin: 0px;
+  padding-top: 0.5rem;
+}
+
+.education-text-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-text-bullets > ul {
+  margin-top: 0.5rem;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .education-card-border {
+    width: 100%;
+  }
+  .education-text-subHeader {
+    padding-top: 0.5rem;
+    font-size: 16px;
+  }
+  .education-text-duration {
+    font-size: 16px;
+  }
+  .education-roundedimg {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+  }
+  .education-card {
+    text-align: center;
+  }
+  .education-card-right {
+    max-width: 100%;
+  }
+  .education-card-border {
+    width: 100%;
+  }
+  .education-roundedimg {
+    width: 4rem;
+    height: 4rem;
+  }
+  .education-text-bullets > ul {
+    max-width: 100%;
+    padding-left: 1.25rem;
+    margin: auto;
+    text-align: left;
+  }
+  .education-text-school {
+    white-space: normal;
+  }
+}

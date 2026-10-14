@@ -1,0 +1,247 @@
+:root {
+  color-scheme: dark;
+  --bg-app: #080d1a;
+  --bg-surface: #0b1220;
+  --bg-card: #111c32;
+  --bg-card-strong: #0f172a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #a7b2c5;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-strong: #6366f1;
+  --accent-soft: rgba(56, 189, 248, 0.14);
+  --border: #263449;
+  --shadow: rgba(2, 6, 23, 0.42);
+  --shadow-soft: rgba(14, 165, 233, 0.18);
+  --button-color: #38bdf8;
+  --button-hover: #7dd3fc;
+  --top-button-hover: #0f172a;
+  --title-color: #e2e8f0;
+  --text-color: #f1f5f9;
+  --text-color-dark: #f8fbff;
+  --sub-title: #a7b2c5;
+  --card-subtitle: #a7b2c5;
+  --talk-card-sub-title: #a3b1c9;
+  --blog-card-title-color: #f8fbff;
+  --toggle-check: #38bdf8;
+  --toggle-switch-slider-bg: #cbd5e1;
+  --github-repo-card-language-color-bg: #38bdf8;
+  --github-repo-card-color: rgb(148, 163, 184);
+  --github-repo-card-repo-card-stats-color: rgb(148, 163, 184);
+  --github-repo-card-repo-name-color: rgb(226, 232, 240);
+  --github-profile-card-location-ts: #dbeafe;
+  --github-profile-card-border: #60a5fa;
+  --light-background1: #0f172a;
+  --light-background2: #111827;
+  --light-background3: #172033;
+  --blog-card-container-color: #0f172a;
+  --dark-background: #f5f8ff;
+  --light-box-shadow-dark: rgba(14, 165, 233, 0.2);
+  --light-box-shadow: rgba(15, 23, 42, 0.25);
+  --light-box-shadow-darker: rgba(14, 116, 144, 0.35);
+  --dark-box-shadow: rgba(96, 165, 250, 0.38);
+  --dark-box-shadow2: rgba(148, 163, 184, 0.6);
+  --experience-card-blurred-div-lg: linear-gradient(
+    rgba(15, 23, 42, 0.7),
+    rgba(15, 23, 42, 0.3)
+  );
+  --experience-card-banner-lg: linear-gradient(
+    rgba(15, 23, 42, 0.8),
+    rgba(15, 23, 42, 0.5)
+  );
+  --progress-bar-background: rgba(148, 163, 184, 0.2);
+  --light-border1: rgba(96, 165, 250, 0.25);
+  --education-card-border: rgba(96, 165, 250, 0.5);
+  --achievement-certificate-card-hover-dark: rgba(56, 189, 248, 0.15);
+  --blog-card-hover-small-color: rgba(148, 163, 184, 0.15);
+  --header-hover-bg: rgba(59, 130, 246, 0.12);
+  --contact-detail-hover-ts: #cbd5e1;
+  --progress-bar-span-bg: #38bdf8;
+  --icon-background: #0f172a;
+  --app-header-bg: #0b1120;
+  --skills-color: #60a5fa;
+  --app-link: #67e8f9;
+  --face-book: #3b5998;
+  --linkedin: #0a66c2;
+  --github: #f8fafc;
+  --gitlab: #fc6d26;
+  --google: #ea4335;
+  --twitter: #1da1f2;
+  --medium: #0f172a;
+  --stackoverflow: #f48024;
+  --instagram: #c13584;
+  --kaggle: #20beff;
+  --header-bg: rgba(7, 16, 31, 0.92);
+  --header-bg-strong: rgba(11, 18, 32, 0.96);
+  --header-border: rgba(96, 165, 250, 0.2);
+  --header-link: #cbd5e1;
+  --header-link-hover: #67e8f9;
+  --header-button-bg: rgba(15, 23, 42, 0.8);
+  --footer-bg: #07101f;
+  --footer-border: rgba(56, 189, 248, 0.28);
+  --footer-card: rgba(15, 23, 42, 0.72);
+  --section-bg: #0b1220;
+  --container-width: min(92%, 1200px);
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-soft-lg: 0 18px 42px rgba(2, 6, 23, 0.25);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --bg-surface: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-strong: #edf4ff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+  --accent-strong: #4f46e5;
+  --accent-soft: rgba(2, 132, 199, 0.1);
+  --border: #dce4ee;
+  --shadow: rgba(15, 23, 42, 0.12);
+  --shadow-soft: rgba(2, 132, 199, 0.12);
+  --button-color: #0284c7;
+  --button-hover: #38bdf8;
+  --top-button-hover: #e2e8f0;
+  --title-color: #0f172a;
+  --text-color: #0f172a;
+  --text-color-dark: #f8fbff;
+  --sub-title: #475569;
+  --card-subtitle: #475569;
+  --talk-card-sub-title: #475569;
+  --blog-card-title-color: #0f172a;
+  --toggle-check: #0284c7;
+  --toggle-switch-slider-bg: #dfe7f1;
+  --github-repo-card-language-color-bg: #0284c7;
+  --github-repo-card-color: rgb(71, 85, 105);
+  --github-repo-card-repo-card-stats-color: rgb(71, 85, 105);
+  --github-repo-card-repo-name-color: rgb(15, 23, 42);
+  --github-profile-card-location-ts: #0f172a;
+  --github-profile-card-border: #93c5fd;
+  --light-background1: #ffffff;
+  --light-background2: #f8fafc;
+  --light-background3: #eef2ff;
+  --blog-card-container-color: #ffffff;
+  --dark-background: #f8fafc;
+  --light-box-shadow-dark: rgba(2, 132, 199, 0.12);
+  --light-box-shadow: rgba(15, 23, 42, 0.08);
+  --light-box-shadow-darker: rgba(2, 132, 199, 0.15);
+  --dark-box-shadow: rgba(79, 70, 229, 0.12);
+  --dark-box-shadow2: rgba(148, 163, 184, 0.36);
+  --experience-card-blurred-div-lg: linear-gradient(
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.2)
+  );
+  --experience-card-banner-lg: linear-gradient(
+    rgba(255, 255, 255, 0.78),
+    rgba(255, 255, 255, 0.5)
+  );
+  --progress-bar-background: rgba(148, 163, 184, 0.18);
+  --light-border1: rgba(148, 163, 184, 0.32);
+  --education-card-border: rgba(148, 163, 184, 0.5);
+  --achievement-certificate-card-hover-dark: rgba(2, 132, 199, 0.08);
+  --blog-card-hover-small-color: rgba(2, 132, 199, 0.05);
+  --header-hover-bg: rgba(59, 130, 246, 0.08);
+  --contact-detail-hover-ts: rgba(2, 132, 199, 0.18);
+  --progress-bar-span-bg: #0284c7;
+  --icon-background: #ecfeff;
+  --app-header-bg: #f8fafc;
+  --skills-color: #0284c7;
+  --app-link: #0f172a;
+  --face-book: #3b5998;
+  --linkedin: #0a66c2;
+  --github: #0f172a;
+  --gitlab: #fc6d26;
+  --google: #ea4335;
+  --twitter: #1da1f2;
+  --medium: #0f172a;
+  --stackoverflow: #f48024;
+  --instagram: #c13584;
+  --kaggle: #20beff;
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-bg-strong: rgba(255, 255, 255, 0.96);
+  --header-border: rgba(148, 163, 184, 0.34);
+  --header-link: #334155;
+  --header-link-hover: #0284c7;
+  --header-button-bg: rgba(148, 163, 184, 0.08);
+  --footer-bg: #f8fafc;
+  --footer-border: rgba(148, 163, 184, 0.28);
+  --footer-card: #ffffff;
+  --section-bg: #f1f5f9;
+}
+
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"), url("./assets/fonts/Agustina.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font: clamp(15px, 1.15vw, 18px) / 1.55 Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #67e8f9;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  body {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}

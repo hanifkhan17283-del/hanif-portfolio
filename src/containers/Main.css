@@ -1,0 +1,35 @@
+.theme-root {
+  min-height: 100vh;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  transition: background-color 0.24s ease, color 0.24s ease;
+}
+
+.dark-mode {
+  color: var(--text-primary);
+}
+
+.main,
+.greet-main,
+.skills-container,
+.experience-container,
+.education-section {
+  box-sizing: border-box;
+  width: min(92%, 1200px);
+}
+
+.main {
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+}
+
+@media (max-width: 600px) {
+  .main,
+  .greet-main,
+  .skills-container,
+  .experience-container,
+  .education-section {
+    width: calc(100% - 32px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

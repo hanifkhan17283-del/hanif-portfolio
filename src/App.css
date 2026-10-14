@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: var(--app-header-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: var(--text-color-dark);
+}
+
+.App-link {
+  color: var(--app-link);
+}
+
+.Header {
+  color: black;
+}
+
+.subTitle {
+  color: var(--sub-title);
+}

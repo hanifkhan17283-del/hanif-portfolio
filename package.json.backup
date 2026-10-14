@@ -1,0 +1,73 @@
+{
+  "homepage": "https://developerfolio.js.org/",
+  "proxy": "http://localhost:4000",
+  "name": "developerfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "mysql2": "^3.24.5",
+    "nodemailer": "^10.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "colorthief": "^2.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "gh-pages": "^2.1.1",
+    "jest-canvas-mock": "^2.3.1",
+    "lottie-react": "^2.4.0",
+    "prettier": "^2.3.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-easy-emoji": "^1.8.1",
+    "react-headroom": "^3.0.0",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^16.10.2",
+    "react-twitter-embed": "3.0.3",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "start": "react-scripts start",
+    "start:api": "node server/index.js",
+    "start:server": "node server/index.js",
+    "build": "node fetch.js && react-scripts build",
+    "start:prod": "npm run build && node server/index.js",
+    "db:backup": "node server/backup.js",
+    "db:migrate": "node server/migrate.js",
+    "admin:create": "node server/create-admin.js",
+    "deploy": "gh-pages -b master -d build",
+    "test": "react-scripts test",
+    "test:server": "node --test server/*.test.js",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
